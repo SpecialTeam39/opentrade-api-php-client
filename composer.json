@@ -1,0 +1,39 @@
+{
+    "name": "opentrade/rest-client",
+    "description": "Official REST client for Open Trade API",
+    "keywords":
+    [
+      "opentrade",
+      "opentrade rest client",
+      "opentrade api client"
+    ],
+    "license": "GPL3",
+    "authors":
+    [
+      {
+        "name": "jojo",
+        "email": "jordy.fatigba@theopentrade.com"
+      }
+    ],
+    "type": "library",
+    "require":
+    {
+      "php": ">=7.4|^8.0",
+      "illuminate/cache": "^7.29",
+      "illuminate/config": "^7.29",
+      "illuminate/log": "^7.29",
+      "guzzlehttp/guzzle": "^6.3.1|^7.0.1",
+      "ext-json": "*"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^8.5.8|^9.3.3"
+    },
+    "autoload": {
+      "psr-4": {
+        "OpenTrade\\": "src/"
+      },
+      "files": [
+        "src/opentrade/helpers/helpers.php"
+      ]
+    }
+}
